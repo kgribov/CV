@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <style>
+        body {
+            font-size: initial;
+            font-style: normal;
+            font-family: __Inter_e66fe9,__Inter_Fallback_e66fe9, monospace;
+            background-color: whitesmoke;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        .cv {
+            display: grid;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            flex-wrap: wrap;
+            max-width: 600px;
+        }
+        .name-section {
+            display: flex;
+        }
+        .name-text-section {
+            padding-right: 80px;
+        }
+        .name {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .contacts-section {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 10px;
+            color: #737373;
+            gap: 5px;
+            padding-top: 4px;
+        }
+        .links {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            padding-top: 5px;
+        }
+        .link-button {
+            border: solid lightgrey;
+            border-radius: 20%;
+            align-items: center;
+            margin: 1px;
+            padding-left: 5px;
+            padding-top: 1px;
+            padding-right: 3px;
+        }
+        .about-section {
+            padding-top: 10px;
+        }
+        .job-section {
+            padding-top: 10px;
+        }
+        .job-title {
+            font-weight: bold;
+            font-size: 12px;
+            padding-top: 8px;
+        }
+        .job-position-title {
+            color: black;
+            font-size: 11px;
+            padding-top: 4px;
+        }
+        .job-time {
+            color: #737373;
+            font-size: 11px;
+        }
+        .job-title-section {
+            display: flex;
+            justify-content: space-between;
+        }
+        .job-resp-list {
+            padding-left: 20px;
+            align-items: flex-start;
+        }
+        .skills-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left;
+            align-items: flex-start;
+            padding-top: 10px;
+        }
+        .skill-tag {
+            background-color: rgba(36,36,36,0.84);
+            color: white;
+            font-size: 10px;
+            border-radius: 5px;
+            align-items: center;
+            margin: 1px;
+            padding: 5px;
+        }
+        .projects-section {
+            padding-top: 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            gap: 0.75rem;
+        }
+        .project {
+            border-color: lightgrey;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .project-skill-tag {
+            background-color: #e6e6e6;
+            color: black;
+            font-weight: bold;
+            font-size: 8px;
+            border-radius: 5px;
+            align-items: center;
+            margin: 1px;
+            padding: 5px;
+        }
+        .description {
+            font-size: 11px;
+            color: #737373;
+            padding-top: 10px;
+            line-height: 1.5;
+        }
+        .details {
+            font-size: 10px;
+            color: #737373;
+            padding-top: 5px;
+            line-height: 1.5;
+        }
+        .new-section-header {
+            font-size: 16px;
+            font-weight: bold;
+            padding-top: 20px;
+        }
+        .profile-photo {
+            max-width: 100px;
+            max-height: 100px;
+            border-radius: 10%;
+        }
+        .link {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmNTAwMDAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS11c2VyLXJvdW5kLXNlYXJjaCI+PGNpcmNsZSBjeD0iMTAiIGN5PSI4IiByPSI1Ii8+PHBhdGggZD0iTTIgMjFhOCA4IDAgMCAxIDEwLjQzNC03LjYyIi8+PGNpcmNsZSBjeD0iMTgiIGN5PSIxOCIgcj0iMyIvPjxwYXRoIGQ9Im0yMiAyMi0xLjktMS45Ii8+PC9zdmc+">
+    <title>Kirill Gribov</title>
+</head>
+<main class="cv">
+    <div class="name-section">
+        <div class="name-text-section">
+            <div class="name">Kirill Gribov</div>
+            <div class="description">Senior Software Engineer focused on building products with extra attention to details</div>
+            <div class="contacts-section">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#808080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                kirill@gribov.dev
+            </div>
+            <div class="contacts-section">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                Lisbon, Portugal, WET
+            </div>
+            <div class="links">
+                <div class="link-button">
+                    <a href="mailto:kirill@gribov.dev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="1 0 24 24" fill="none" stroke="#808080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+                    </a>
+                </div>
+                <div class="link-button">
+                    <a href="tel:+351912935445">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#808080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </a>
+                </div>
+                <div class="link-button">
+                    <a href="https://github.com/kgribov">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#808080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                    </a>
+                </div>
+                <div class="link-button">
+                    <a href="https://www.linkedin.com/in/kirill-gribov-73817a48/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#808080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img class="profile-photo" src="https://avatars.githubusercontent.com/u/2950277?s=400&u=fc2cca6b1cc045883bb4caa8fbc0e79c182daf56&v=4" alt="profile-photo">
+        </div>
+    </div>
+    <div class="about-section">
+        <div class="new-section-header">About</div>
+        <div class="description">
+            With over 9 years of experience, I am a passionate professional who loves driving product success. I have a strong background in backend development, specializing in JVM languages such as Java and Kotlin. I enjoy the process of developing and refining products, and I am dedicated to making a positive impact through my work. I thrive in fast-paced environments and am driven to deliver exceptional results under pressure. My curiosity and continuous learning mindset keep me up-to-date with industry trends and allow me to bring innovative ideas to the table.
+        </div>
+    </div>
+    <div class="new-section-header">Work Experience</div>
+    <div class="job-section">
+        <div class="job-title-section">
+            <div>
+                <div class="job-title">Brighty App</div>
+                <div class="job-position-title">Senior Software Developer</div>
+            </div>
+            <div class="job-time">
+               Nov 2020 - Now
+            </div>
+        </div>
+        <div class="details">
+            Design and build microservice backend infrastructure from scratch.
+            Responsibilities:
+            <ul class="job-resp-list">
+                <li>Implementation of internal core frameworks</li>
+                <li>Design and develop event-driven applications with DDD approach in Kotlin language</li>
+                <li>Implement logic in such domains as transfers(fiat/crypto), FX rates, marketing, community</li>
+                <li>Setup monitoring, tracing and logging on code level</li>
+                <li>Manage and support applications in Kubernetes</li>
+                <li>Develop and support integrations with external systems (like fireblocks.com, intercom.com)</li>
+                <li>Building dashboards/graphs with Looker Studio</li>
+            </ul>
+        </div>
+        <div class="job-title-section">
+            <div>
+                <div class="job-title">Revolut</div>
+                <div class="job-position-title">Software Developer -> Lead Software Developer</div>
+            </div>
+            <div class="job-time">
+                Aug 2018 - Nov 2020
+            </div>
+        </div>
+        <div class="details">
+            Building mini CRM platfrom and Promo/Referral framework from scratch.
+            Responsibilities :
+            <ul class="job-resp-list">
+                <li>Analyze and define business requirements in pair with product owner</li>
+                <li>Develop server side applications in Java and Kotlin lang with Ktor framework (https://ktor.io/)</li>
+                <li>Implementation of referral/promo application (7m+ of new customers)</li>
+                <li>Build CRM platform with next features - notification's templating (with multi-language support), select target audience, sending notifications, analytics/metrics</li>
+                <li>24/7 production support of implemented solutions</li>
+                <li>Create dashboards/graphs with product's metrics in Metabase</li>
+                <li>Lead a small team of developers, onboard new team members, actively participate in interview process</li>
+            </ul>
+        </div>
+        <div class="job-title-section">
+            <div>
+                <div class="job-title">Grid Dynamics</div>
+                <div class="job-position-title">Senior Big Data Developer</div>
+            </div>
+            <div class="job-time">
+                Apr 2016 - Aug 2018
+            </div>
+        </div>
+        <div class="details">
+            Migrating Apache Storm topology to Apache Spark for american advertising technology company
+            Responsibilities:
+            <ul class="job-resp-list">
+                <li>Migrating Storm pipeline to Spark pipeline</li>
+                <li>Rewriting services from Java to Scala</li>
+                <li>Creating ETL pipeline on Scala for dataload</li>
+                <li>Writing integration tests using TestContainers(Docker)</li>
+            </ul>
+            Big data fraud platform for financial company
+            Responsibilities:
+            <ul class="job-resp-list">
+                <li>Creating streaming and batch spark jobs using scala</li>
+                <li>Writing workflows for Airflow scheduler</li>
+                <li>Writing workbooks for Apache Zeppelin</li>
+                <li>Deploy apps in docker containers</li>
+                <li>Monitor jobs using Graphite/Grafana</li>
+            </ul>
+        </div>
+        <div class="job-title-section">
+            <div>
+                <div class="job-title">Grid Dynamics</div>
+                <div class="job-position-title">Software Engineer</div>
+            </div>
+            <div class="job-time">
+                Dec 2012 - Apr 2015
+            </div>
+        </div>
+        <div class="details">
+            Developing project based on Apache Solr platform. The main activity is to support eCommerce-oriented needs. The project contains special matching mechanisms, configs to tune search for specific customer, connectors to platforms : Hybris, ATG. Responsibilities:
+            <ul class="job-resp-list">
+                <li>Creating configuration elements (custom Solr schema)</li>
+                <li>Developing custom Solr components (handlers, filters)</li>
+                <li>Creating ETL process based on Solr DataImportHandler</li>
+                <li>Writing unit, integration, randomization tests</li>
+            </ul>
+            ETL project for american advertising technology company.
+            Responsibilities:
+            <ul class="job-resp-list">
+                <li>Working with dozens of legacy code</li>
+                <li>Working with Hadoop MapReduce jobs</li>
+                <li>Creating Spring Batch and MVC applications</li>
+            </ul>
+        </div>
+    </div>
+    <div class="new-section-header">Education</div>
+    <div class="job-section">
+        <div class="job-title">Saint Petersburg State Electrotechnical University "LETI"</div>
+        <div class="details">
+            Master Degree in Mathematics and Computer Science
+        </div>
+    </div>
+    <div class="new-section-header">Skills</div>
+    <div class="skills-section">
+        <div class="skill-tag">Kotlin</div>
+        <div class="skill-tag">Java</div>
+        <div class="skill-tag">PostgreSQL</div>
+        <div class="skill-tag">Ktor</div>
+        <div class="skill-tag">Kafka</div>
+        <div class="skill-tag">Microservices</div>
+        <div class="skill-tag">Algorithms</div>
+        <div class="skill-tag">AWS</div>
+        <div class="skill-tag">GCP</div>
+    </div>
+    <div class="new-section-header">Projects</div>
+    <div class="projects-section">
+            <div class="project">
+                <a class="link" href="https://github.com/razz-team/eva">
+                    <div class="job-title">Eva</div>
+                </a>
+                <div class="details">A CQRS framework to build event-driven applications</div>
+                <div class="skills-section">
+                    <div class="project-skill-tag">Kotlin</div>
+                    <div class="project-skill-tag">JOOQ</div>
+                    <div class="project-skill-tag">Coroutines</div>
+                    <div class="project-skill-tag">Vert.X</div>
+                    <div class="project-skill-tag">Hikari</div>
+                </div>
+            </div>
+            <div class="project">
+                <a class="link" href="https://github.com/kgribov/TelegramBot">
+                    <div class="job-title">TelegramBot</div>
+                </a>
+                <div class="details">Scala API and project template to create Telegram bots<div>
+                <div class="skills-section">
+                    <div class="project-skill-tag">Scala</div>
+                    <div class="project-skill-tag">SBT</div>
+                    <div class="project-skill-tag">Docker</div>
+                    <div class="project-skill-tag">Grafana</div>
+                    <div class="project-skill-tag">Logstash</div>
+                </div>
+            </div>
+    </div>
+</main>
+</html>
